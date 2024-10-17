@@ -8,6 +8,7 @@
     --primary-color-text-dark:#777777;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +27,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-
 }
 
 .logo-span {
@@ -96,14 +96,14 @@ margin: 0;
 .frame {
     width: 100%;
     text-align: center;
-
 }
 
 .frame img {
-width: 329px;
-height: 206px;
-object-fit: cover;
-margin: 22px;
+    display: inline-block;
+    width: 329px;
+    height: 206px;
+    object-fit: cover;
+    margin: 22px;
 }
 
 .my-clients {
@@ -114,7 +114,7 @@ width: 100%;
 .card {
     width: 100%;
     text-align: center;
-margin-top: 24px;
+    margin-top: 24px;
 }
 
 .card h4 {
@@ -125,17 +125,16 @@ margin-top: 24px;
 
 .card span {
     display: inline-block;
-background-color: var(--primary-color-headlines);
-opacity: 0.6;
-color: var(--primary-color-text-dark);
-padding: 4px;
-margin-bottom: 5px;
+    background-color: var(--primary-color-headlines);
+    opacity: 0.6;
+    color: var(--primary-color-text-dark);
+    padding: 4px;
+    margin-bottom: 5px;
 }
 
 
 .card p {
-margin: 15px;
-
+    margin: 15px;
 }
 
 .contact {
@@ -162,14 +161,18 @@ margin: 15px;
 }
 
 .social-media-icons {
-list-style: none;
-padding: 0%;
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-icons ul {
+    padding: 0;
 }
 
 .social-media-icons ul li {
     display: inline-block;
     margin: 19px;
-
+    margin: 0;
 }
 
 footer {
@@ -178,7 +181,36 @@ footer {
 }
 
 .menu-list {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: -250px;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 250px;
+    height: 500px;
+    background-color: var(--primary-color-button);
+    padding: 16px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+}
+
+.menu-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu-list ul li {
+    margin-bottom: 32px;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: var(--primary-color-text);
+}
+
+.menu-list.active {
+    right: 0;
 }
 
 .profile-learn-more {
@@ -219,10 +251,10 @@ footer {
         grid-template-columns: 1fr 2fr;
         align-items: center;
     }
-
-    .menu-list {
-        display: block;
-    }
+    
+.menu-list {
+    display: block;
+}
 
 .menu-list ul {
     list-style: none;
@@ -234,7 +266,6 @@ footer {
 }
 
 .menu-list ul li {
-
     display: inline-block;
     margin-right: 14px;
 }
@@ -399,7 +430,7 @@ input {
 }
 
 @media (min-width: 1025px) {
-
+    
     .hamburger {
         display: none;
      }
