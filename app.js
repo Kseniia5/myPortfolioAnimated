@@ -4,6 +4,35 @@ const menuList = document.querySelector (".menu-list");
 const menuLinks = document.querySelectorAll ("menu-list a");
 const frameImage = document.querySelector ("#frame");
 const images = ["1.jpeg","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg"];
+const btnOpenForm = document.querySelector("#btn-open-form");
+const modal = document.querySelector(".modal");
+const contactForm = document.querySelector ("#contact-form");
+const inputName = document.querySelector("#name");
+const inputEmail = document.querySelector ("#email");
+const inputMessage = document.querySelector ("#message");
+
+contactForm.addEventListener ("submit" , (event) => {
+event.preventDefault ();
+
+const name = inputName.value;
+const email = inputEmail.value;
+const message = inputMessage.value;
+
+localStorage.setItem ("userName", JSON.stringify(name));
+localStorage.setItem ("userEmail", JSON.stringify(email));
+localStorage.setItem ("userMessage", JSON.stringify(message));
+
+});
+
+btnOpenForm.addEventListener("click" , () => {
+    modal.style.display = "block";
+});
+
+window.onclick = (Event) => {
+    if(Event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 let currentImageIndex = 0;
 

@@ -69,28 +69,28 @@ body {
 }
 
 .profile-image img {
-display: inline-block;
-width: 224px;
-height: 224px;
-border-radius: 50%;
-object-fit: cover;
-margin: 25px;
+    display: inline-block;
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 25px;
 }
 
 hr {
-width: 151px;
-height: 12px;
-background-color: var(--primary-color-headlines);
-border-radius: 7px;
-border: none;
+    width: 151px;
+    height: 12px;
+    background-color: var(--primary-color-headlines);
+    border-radius: 7px;
+    border: none;
 }
 
 .headline h3 {
-text-align: center;
-color: var(--primary-color-headlines);
-font-family: "Russo one", sans-serif;
-font-size: 32px;
-margin: 0;
+    text-align: center;
+    color: var(--primary-color-headlines);
+    font-family: "Russo one", sans-serif;
+    font-size: 32px;
+    margin: 0;
 }
 
 .frame {
@@ -107,8 +107,7 @@ margin: 0;
 }
 
 .my-clients {
-width: 100%;
-
+    width: 100%;
 }
 
 .card {
@@ -132,9 +131,19 @@ width: 100%;
     margin-bottom: 5px;
 }
 
-
 .card p {
     margin: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-button);
 }
 
 .contact {
@@ -142,7 +151,6 @@ width: 100%;
     text-align: center;
     margin-top: 32px;
 }
-
 
 .contact button {
     border: none;
@@ -430,7 +438,7 @@ input {
 }
 
 @media (min-width: 1025px) {
-    
+
     .hamburger {
         display: none;
      }
@@ -558,7 +566,7 @@ hr {
 }
 
 .my-works-intro{
-display: block;
+    display: block;
 }
 
 .my-works-intro p {
